@@ -30,7 +30,7 @@ export default function Aside() {
     { to: '/admin', label: 'Dashboard', icon: 'fas fa-tachometer-alt' },
     { to: '/admin/AdmonLibros', label: 'Libros', icon: 'fas fa-book' },
     { to: '/admin/AdmonUsuarios', label: 'Usuarios', icon: 'fas fa-user' },
-    { to: '/admin/prestamos', label: 'Préstamos', icon: 'fas fa-handshake' },
+    { to: '/admin/AdmonPrestamos', label: 'Préstamos', icon: 'fas fa-handshake' },
     { to: '/admin/AdmonAutores', label: 'Autores', icon: 'fas fa-user-edit' },
     { to: '/admin/AdmonCategorias', label: 'Categorías', icon: 'fas fa-tags' },
   ];
