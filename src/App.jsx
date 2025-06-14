@@ -13,6 +13,7 @@ import Header from './admin/components/Header';
 import AdmonLibros from './admin/components/AdmonLibros';
 import AdmonUsuarios from './admin/components/AdmonUsuarios';
 import AdmonAutores from './admin/components/AdmonAutores';
+import AdmonCategoria from './admin/components/AdmonCategoria';
 
 import ProtectedRoute from './frontend/components/ProtectedRoute';
 import ClienteDashboard from './frontend/components/ClienteDashboard';
@@ -31,6 +32,7 @@ function App() {
         <Route path="/categoria" element={<Categoria />} />
         <Route path="/libros" element={<Libros />} />
         <Route path="/prestamos" element={<Prestamos />} />
+
 
         {/* Ruta protegida para admin: dashboard */}
         <Route
@@ -95,7 +97,21 @@ function App() {
             </ProtectedRoute>
           }
         />
-
+        {/* ✅ NUEVA RUTA: administración de categorías */}
+        <Route
+          path="/admin/AdmonCategorias"
+          element={
+            <ProtectedRoute role="admin">
+              <div className="d-flex">
+                <Aside />
+                <div className="flex-grow-1">
+                  <Header />
+                  <AdmonCategoria />
+                </div>
+              </div>
+            </ProtectedRoute>
+          }
+          />
         {/* Ruta protegida para cliente */}
         <Route
           path="/cliente"

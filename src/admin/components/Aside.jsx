@@ -32,7 +32,7 @@ export default function Aside() {
     { to: '/admin/AdmonUsuarios', label: 'Usuarios', icon: 'fas fa-user' },
     { to: '/admin/prestamos', label: 'Préstamos', icon: 'fas fa-handshake' },
     { to: '/admin/AdmonAutores', label: 'Autores', icon: 'fas fa-user-edit' },
-    { to: '/admin/categorias', label: 'Categorías', icon: 'fas fa-tags' },
+    { to: '/admin/AdmonCategorias', label: 'Categorías', icon: 'fas fa-tags' },
   ];
 
   return (
